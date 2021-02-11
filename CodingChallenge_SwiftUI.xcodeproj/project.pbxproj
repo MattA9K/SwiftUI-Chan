@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C13459D25D595B70000259B /* PredictingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C13459C25D595B70000259B /* PredictingTextField.swift */; };
 		1C67B7FA25D568AC009CCE82 /* CodingChallenge_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C67B7F925D568AC009CCE82 /* CodingChallenge_SwiftUIApp.swift */; };
 		1C67B7FC25D568AC009CCE82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C67B7FB25D568AC009CCE82 /* ContentView.swift */; };
 		1C67B7FE25D568AE009CCE82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C67B7FD25D568AE009CCE82 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C13459C25D595B70000259B /* PredictingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictingTextField.swift; sourceTree = "<group>"; };
 		1C67B7F625D568AC009CCE82 /* CodingChallenge_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingChallenge_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C67B7F925D568AC009CCE82 /* CodingChallenge_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingChallenge_SwiftUIApp.swift; sourceTree = "<group>"; };
 		1C67B7FB25D568AC009CCE82 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				1C67B7FD25D568AE009CCE82 /* Assets.xcassets */,
 				1C67B80225D568AE009CCE82 /* Info.plist */,
 				1C67B7FF25D568AE009CCE82 /* Preview Content */,
+				1C13459C25D595B70000259B /* PredictingTextField.swift */,
 			);
 			path = CodingChallenge_SwiftUI;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C13459D25D595B70000259B /* PredictingTextField.swift in Sources */,
 				1C67B7FC25D568AC009CCE82 /* ContentView.swift in Sources */,
 				1C67B7FA25D568AC009CCE82 /* CodingChallenge_SwiftUIApp.swift in Sources */,
 			);
