@@ -135,23 +135,26 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Form {
-                    PredictingTextField(predictableValues: self.$predictableValues, predictedValues: self.$predictedValue, textFieldInput: self.$textFieldInput).onTapGesture {
-                        keyboardIsOpen = 1.0
-                        predictableValues = mainViewModel.autocompletablePredictions
-                    }
-                    
-                }.frame(height: 80, alignment: .center)
-                
-                    List {
-                        Group {
-                            ForEach(self.predictedValue, id: \.self){ value in
-                                Button("\(value)", action: {
-                                    textFieldInput = value
-                                })
-                            }
-                        }
-                    }
+//                Form {
+//                    PredictingTextField(predictableValues: self.$predictableValues, predictedValues: self.$predictedValue, textFieldInput: self.$textFieldInput).onTapGesture {
+//                        keyboardIsOpen = 1.0
+//                        predictableValues = mainViewModel.autocompletablePredictions
+//                    }
+//                }.frame(height: 80, alignment: .center)
+              
+              
+              // - - - - - - - - - - - - - - - - - - - - - - -
+              
+              
+//                    List {
+//                        Group {
+//                            ForEach(self.predictedValue, id: \.self){ value in
+//                                Button("\(value)", action: {
+//                                    textFieldInput = value
+//                                })
+//                            }
+//                        }
+//                    }
                     List {
                         Group {
                             ForEach(mainViewModel.rowsList, id: \.id) { row in
@@ -225,6 +228,13 @@ class AKMainViewModel: ObservableObject {
     func loadAllObjectsFromAPI() {
         let semaphore = DispatchSemaphore (value: 0)
         
+      let rURL = "\(HOST_CONTENT)\(CATEGORY)/catalog.json";
+      
+      
+      print(" MAKING API REQUEST: - \(rURL)")
+      
+      
+      
         var request = URLRequest(url: URL(string: "\(HOST_CONTENT)\(CATEGORY)/catalog.json")!,timeoutInterval: Double.infinity)
         request.httpMethod = "GET"
         
