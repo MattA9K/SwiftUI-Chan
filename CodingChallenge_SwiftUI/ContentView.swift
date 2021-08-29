@@ -259,6 +259,38 @@ class AKMainViewModel: ObservableObject {
 }
 
 
+
+class AKBotCrawlerWorker {
+  
+  var currentTask : Int = 0;
+  var totalDispatches : Int = 20;
+  
+  
+  init() {
+    print("init Run Request AKBotCrawlerWorker.")
+  }
+  
+  
+  func runLoopUntil() {
+    print("func runLoopUntil called.")
+    while self.currentTask < self.totalDispatches {
+      self.currentTask += 1
+      
+      
+      
+      Timer.scheduledTimer(timeInterval: 550, target: self, selector: Selector(":gotEventSentToMe"), userInfo: nil, repeats: true);
+      
+    }
+  }
+  
+  
+  func gotEventSentToMe() {
+    
+  }
+  
+}
+
+
 class AKRowViewModel: ObservableObject {
     
     @Published var strVMTitle : String = "Untitled" 
